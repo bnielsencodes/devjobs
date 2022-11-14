@@ -458,3 +458,53 @@ MORE BUTTON
   }
 }
 
+/* ****************************
+*******************************
+LIGHT/DARK MODE TOGGLE MEDIA QUERIES
+*******************************
+**************************** */
+
+@media (prefers-color-scheme: light) {
+  body {
+    --primary-color: #5964e0;
+    --primary-bg-color: #f4f6f8;
+    --secondary-bg-color: #fff;
+    --primary-text-color: #19202d;
+    --secondary-text-color: #6e8098;
+    --filter-btn-color: #638098;
+    /* not used */
+    --light-violet-color: #939bf4;
+    --grey-color: #9daec2;
+    --midnight-color: #121721;
+  }
+
+  .filter-btn-dark {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --primary-color: #5964e0;
+    --primary-bg-color: #121721;
+    --secondary-bg-color: #19202d;
+    --primary-text-color: #fff;
+    --secondary-text-color: #6e8098;
+    --filter-btn-color: #fff;
+    /* not used */
+    --light-violet-color: #939bf4;
+    --grey-color: #9daec2;
+  }
+
+  .filter-btn-light {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: light) and (prefers-color-scheme: dark),
+  screen and (min-width: 768px) {
+  .filter-btn-dark {
+    display: none;
+  }
+}
+
