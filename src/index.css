@@ -177,6 +177,73 @@ SEARCH BAR
   display: none;
 }
 
+/* ****************************
+*******************************
+JOBS LIST
+*******************************
+**************************** */
+
+.jobs-list {
+  width: 100%;
+}
+
+.job {
+  position: relative;
+  height: 234px;
+  padding-inline: 33px;
+  border-radius: 6px;
+  margin-bottom: 39px;
+  background-color: var(--secondary-bg-color);
+}
+
+.job:last-of-type {
+  margin-bottom: 30px;
+}
+
+.job__logo {
+  position: absolute;
+  top: -25px;
+  left: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+}
+
+.job__info {
+  padding: 22px 0 26px;
+}
+
+.job__info:last-of-type {
+  padding-bottom: 0;
+}
+
+.job__info p {
+  margin: 0;
+  color: var(--secondary-text-color);
+}
+
+.bullet {
+  margin-inline: 5px;
+  color: var(--secondary-text-color);
+  font-size: 2.5rem;
+}
+
+.job__info h4 {
+  margin: 5px 0 14px;
+  color: var(--primary-text-color);
+  font-size: 20px;
+}
+
+.job__location {
+  margin: 43px 0 0;
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 700;
+}
+
 }
 
 code {
