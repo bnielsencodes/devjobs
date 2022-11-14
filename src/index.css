@@ -262,4 +262,128 @@ MORE BUTTON
   font-weight: 700;
 }
 
+/* ****************************
+*******************************
+768 MEDIA QUERIES
+*******************************
+**************************** */
+
+@media screen and (min-width: 768px) {
+  .header {
+    height: 160px;
+    padding-inline: 39px;
+    background-image: url("./assets/tablet/bg-pattern-header.svg");
+  }
+
+  .main {
+    padding: 28px 39px 60px;
+  }
+
+  .search-wrapper {
+    justify-content: center;
+    transform: translateY(-69px);
+  }
+
+  .filter-title-container,
+  .filter-location-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 2;
+    height: 80px;
+    padding-left: 25px;
+    border-right: 1px solid rgba(110, 128, 152, 0.2);
+  }
+
+  .filter-title-container input,
+  .filter-location-container input {
+    width: 158px;
+    padding-bottom: 3px;
+    margin: 0 0 4px 14px;
+  }
+
+  .filter-title-container img {
+    display: block;
+  }
+
+  .filter-search-container {
+    justify-content: flex-end;
+    flex-grow: 1;
+    max-width: 252px;
+    margin: 0 15px 0 20px;
+  }
+
+  .filter-full-time {
+    display: block;
+    padding-bottom: 8px;
+    font-weight: 700;
+  }
+
+  .filter-full-time input {
+    display: none;
+  }
+
+  .full-time-span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 1px;
+    color: var(--primary-text-color);
+  }
+
+  .full-time-span::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 6px 17px 0 0;
+    background-color: #979797;
+    opacity: 0.1035;
+    mix-blend-mode: normal;
+    border-radius: 3px;
+  }
+
+  .filter-btn {
+    display: none;
+  }
+
+  .search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    margin: 0 0 0 28px;
+  }
+
+  .search-btn img {
+    display: none;
+  }
+
+  .search-btn span {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .jobs-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9px;
+  }
+
+  .jobs-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9px;
+  }
+
+  .job {
+    margin-bottom: 54px;
+  }
+
+  .job:last-of-type {
+    margin-bottom: 56px;
+  }
 }
+
