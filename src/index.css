@@ -6,7 +6,31 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
+  box-sizing: border-box;
 }
+
+/* ****************************
+*******************************
+HEADER
+*******************************
+**************************** */
+
+.header {
+  height: 136px;
+  padding-inline: 24px;
+  background-color: var(--primary-bg-color);
+  background-image: url("./assets/mobile/bg-pattern-header.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 32px;
+}
+
 }
 
 code {
