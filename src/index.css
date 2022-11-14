@@ -387,3 +387,74 @@ MORE BUTTON
   }
 }
 
+/* ****************************
+*******************************
+1440 MEDIA QUERIES
+*******************************
+**************************** */
+
+@media screen and (min-width: 1440px) {
+  .header {
+    padding-inline: 165px;
+    background-image: url("./assets/desktop/bg-pattern-header.svg");
+  }
+
+  .main {
+    padding: 70px 165px 104px;
+  }
+
+  .search-wrapper {
+    transform: translateY(-108px);
+  }
+
+  .filter-title-container,
+  .filter-location-container {
+    flex-grow: 1;
+  }
+
+  .filter-location-container {
+    min-width: 300px;
+  }
+
+  .filter-title-container input {
+    width: 351px;
+  }
+
+  #filter-title {
+    display: none;
+  }
+
+  #filter-title-lg {
+    display: block;
+  }
+
+  .filter-full-time {
+    display: flex;
+    align-items: center;
+  }
+
+  .filter-search-container {
+    max-width: 314px;
+    margin: 0 16px 0 20px;
+  }
+
+  .only-span {
+    display: block;
+    margin-left: 4px;
+  }
+
+  .search-btn {
+    width: 123px;
+    margin: 0 0 0 27px;
+  }
+
+  .jobs-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .job {
+    margin-bottom: 40px;
+  }
+}
+
